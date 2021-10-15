@@ -1,0 +1,52 @@
+header{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.score {
+    display:flex;
+    width: 94%;
+    color:rebeccapurple;
+}
+.time {
+    display: flex;
+    width: 6%;
+}
+h1 {
+    font-size: 38px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div {
+font-family: Arial, Helvetica, sans-serif;
+color:green;
+font-size: 20px;
+text-align: center;
+}
+.container {
+    margin:0 auto;
+    width:960px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.startBtn {
+    padding:5px 10px;
+    background-color:;
+    font-size: 24px;
+    color: white;
+    border-radius: 5px;
+    margin:0 auto;
+    width:18%;
+    justify-content: center;
+}
+.span {
+    color:darkslategray;
+   
+}
+ 
+.option {
+    margin:5px;
+    background-color:purple;
+    border-radius: 5px;
+}
