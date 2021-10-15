@@ -13,29 +13,35 @@
 
     <body>
         <header>
-            <div class="score">View high scores</div>
-            <div class="time">  time:</div>
+            <div class="scores">View high scores</div>
+            <div id="countdown">time:</div>
         </header>
         <main class="container">
             <section class="intro">
                 <h1 class="question">
                     Coding Quiz Challenge
                 </h1>
-                <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answer will penalize your score/time by ten seconds!</p>
-                <button class="startBtn">
+                <p class="options">Try to answer the following code-related questions within the time limit. Keep in
+                    mind that incorrect answer will penalize your score/time by ten seconds!</p>
+                <button id="startBtn">
                     start quiz
                 </button>
             </section>
 
-            <section class="start">
-
+            <section class="startQuiz">
+                <h1 class="question" data-state="hidden"></h1>
+                <p class="options" data-state="hidden">
+                <ol>
+                    <li></li>
+                </ul>
+                </p>
             </section>
 
 
 
 
         </main>
-        <script src="./script.js"></script>
+        <script src="./assets/js/script.js"></script>
     </body>
 
 </html>

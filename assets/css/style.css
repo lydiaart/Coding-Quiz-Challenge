@@ -2,15 +2,16 @@ header{
     display:flex;
     flex-wrap: wrap;
     width: 100%;
+    margin: 15px;
 }
-.score {
+.scores {
     display:flex;
-    width: 94%;
-    color:rebeccapurple;
+    width: 92%;
+    color:steelblue;
 }
-.time {
+#countdown {
     display: flex;
-    width: 6%;
+    width: 8%;
 }
 h1 {
     font-size: 38px;
@@ -18,9 +19,9 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
 div {
-font-family: Arial, Helvetica, sans-serif;
-color:green;
-font-size: 20px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+color:steelblue;
+font-size: 18px;
 text-align: center;
 }
 .container {
@@ -29,10 +30,11 @@ text-align: center;
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    color:midnightblue
 }
-.startBtn {
+#startBtn {
     padding:5px 10px;
-    background-color:;
+    background-color:tomato;
     font-size: 24px;
     color: white;
     border-radius: 5px;
