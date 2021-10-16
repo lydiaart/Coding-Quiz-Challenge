@@ -14,29 +14,28 @@
     <body>
         <header>
             <div class="scores">View high scores</div>
-            <div id="countdown">time:</div>
+            <div id="countdown">Time:</div>
             
         </header>
         <main class="container">
             <section class="startQuiz" data-state="hidden">
-                <h1 class="question" data-state="hidden">
+                <h1 class="question">
                     Coding Quiz Challenge
                 </h1>
-                <p data-state="hidden">Try to answer the following code-related questions within the
+                <p>Try to answer the following code-related questions within the
                     time limit. Keep in
                     mind that incorrect answer will penalize your score/time by ten seconds!</p>
                 <button Id="startBtn">
-                    start quiz
+                    START QUIZ
                 </button>
             </section>
-            <section class="quiz" data-state="hidden">
-            <h1>Commonly used data types DO NOT include:</h1>
-            <ul>
-                    <li class="options">1.strings</li>
-                    <li class="options">2.booleans</li>
-                    <li class="options">3.alerts</li>
-                    <li class="options">4.numbers</li>
-                </ul>
+            <section class="quiz hidden">
+            
+            </section>
+
+            <section class="initial hidden">
+                Enter your initial here:<input type="text" id="initial-input">
+                <button id="saveBtn">Save</button>
             </section>
         </main>
         <footer>© Lydia Loy 2021</footer>

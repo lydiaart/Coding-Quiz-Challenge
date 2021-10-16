@@ -1,35 +1,11 @@
 var timerEl = document.getElementById("countdown");
 var startBtnEl = document.getElementById("startBtn");
-
-// When start button is clicked, the quiz starts and the timer starts countdown.
-startBtnEl.addEventListener("click", function () {
-
-    // Timer that counts down from 75
-    function countdown() {
-
-        var timeLeft = 75;
-
-        // Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
-        var timeInterval = setInterval(function () {
-            // As long as the `timeLeft` is greater than 1
-            if (timeLeft > 1) {
-                // Set the `textContent` of `timerEl` to show the remaining seconds
-                timerEl.textContent = timeLeft;
-                // Decrement `timeLeft` by 1
-                timeLeft--;
-
-            } else {
-                // Once `timeLeft` gets to 0,use `clearInterval()` to stop the timer
-                clearInterval(timeInterval);
-            }
-        }, 1000);
-    }
-    countdown();
-});
-
-
-
-var data = [{
+var startQuizEl = document.querySelector(".startQuiz")
+var quizEl = document.querySelector(".quiz")
+var timeIntervalId
+var initialEl = document.querySelector(".initial")
+var data = [
+    {
     question: "Commonly used data types DO NOT include:",
     options: ["1. strings", "2. booleans", "3. alerts", "4. numbers"],
     correctAnswer: 3,
@@ -56,11 +32,54 @@ var data = [{
 }
 ]
 
-function startQuiz () {
-    
+var dataIndex = 0
 
+function showQuestion(){ 
+        quizEl.innerHTML=`
+        <h1>${data[dataIndex].question}</h1>
+        <ul>
+                <li class="options">${data[dataIndex].options[0]}</li>
+                <li class="options">${data[dataIndex].options[1]}</li>
+                <li class="options">${data[dataIndex].options[2]}</li>
+                <li class="options">${data[dataIndex].options[3]}</li>
+            </ul>
+`
+ var optionsEl = document.querySelectorAll(".options")
+
+ for (let i = 0; i < optionsEl.length; i++) {
+     optionsEl[i].addEventListener("click",function(){
+         if (dataIndex === data.length - 1){
+             clearInterval(timeIntervalId);
+         } else {
+            dataIndex++
+            showQuestion();
+         }
+     
+     })
+ }  
 }
-// for (let i = 0; i < data.length; i++) {
-//    var 
 
-// };
+startBtnEl.addEventListener("click", function () {
+    startQuizEl.classList.add("hidden")
+    quizEl.classList.remove("hidden")
+    showQuestion()
+    countdown();
+});
+
+function countdown() {
+
+    var timeLeft = 75;
+     timeIntervalId = setInterval(function () {
+        if (timeLeft >=0 ) {
+            timerEl.textContent = "Time:" + timeLeft;
+            timeLeft--;
+
+        } else {
+            clearInterval(timeIntervalId);
+            initialEl.classList.remove("hidden") 
+        }
+    }, 1000);
+}
+
+
+
