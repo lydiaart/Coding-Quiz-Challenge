@@ -11,12 +11,12 @@ header{
 }
 .scores {
     display:flex;
-    width: 92%;
+    width: 94%;
     color:black;
 }
 #countdown {
-    display: flex;
-    width: 8%;
+    display:flex;
+    width: 6%;
     color:black;
 }
 
