@@ -42,7 +42,7 @@ text-align: center;
     color:black;
 }
 
-#startBtn {
+#startBtn, #saveBtn {
     padding:10px;
     background-color:slategrey;
     font-size: 20px;
@@ -78,4 +78,9 @@ footer {
 
 .hidden {
     display:none;
+}
+.Initial {
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
 }

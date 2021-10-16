@@ -13,9 +13,10 @@
 
     <body>
         <header>
-            <div class="scores">View high scores</div>
+            <div class="scores"><a href="./highScore.html">
+                    View high scores</a></div>
             <div id="countdown">Time:</div>
-            
+
         </header>
         <main class="container">
             <section class="startQuiz" data-state="hidden">
@@ -30,13 +31,16 @@
                 </button>
             </section>
             <section class="quiz hidden">
-            
+
             </section>
 
             <section class="initial hidden">
+                <h1>All done!</h1>
                 Enter your initial here:<input type="text" id="initial-input">
                 <button id="saveBtn">Save</button>
             </section>
+
+
         </main>
         <footer>© Lydia Loy 2021</footer>
         <script src="./assets/js/script.js"></script>
