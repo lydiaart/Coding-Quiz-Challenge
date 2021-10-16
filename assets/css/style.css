@@ -2,22 +2,31 @@ header{
     display:flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: 15px;
+    background-color: lightsteelblue;
+    opacity: 0.7;
+    height:260px;
+    padding:15px;
+    background-image: url(./image/time-371226_1920.jpg);
+    z-index: -10;
 }
 .scores {
     display:flex;
     width: 92%;
-    color:steelblue;
+    color:black;
 }
 #countdown {
     display: flex;
     width: 8%;
+    color:black;
 }
+
 h1 {
     font-size: 38px;
+    color:slategrey;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 div {
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 color:steelblue;
@@ -27,28 +36,39 @@ text-align: center;
 .container {
     margin:0 auto;
     width:960px;
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
     text-align: center;
-    color:midnightblue
+    color:black;
 }
+
 #startBtn {
-    padding:5px 10px;
-    background-color:tomato;
-    font-size: 24px;
+    padding:10px;
+    background-color:slategrey;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
     color: white;
-    border-radius: 5px;
+    border-radius: 15px;
     margin:0 auto;
     width:18%;
     justify-content: center;
 }
-.span {
-    color:darkslategray;
-   
-}
- 
-.option {
-    margin:5px;
-    background-color:purple;
-    border-radius: 5px;
+
+.options {
+    margin:10px;
+    background-color:slategrey;
+    border-radius: 15px;
+    width: 18%;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color:snow;
+    padding:10px;
+    text-align: center;
+} 
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    color:slategrey;
+    text-align: center;
+    margin-top: 10%;
 }
