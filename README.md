@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a code-related quiz challenge webpage. The users are expected to finish five questions within 50 seconds. Each incorrect answer will deduct 10 seconds. The quiz will start as soon as the users click on the "START" button, and the timer will start count down. The users are requested to input their initial when the quiz is completed. The webpage will store the initials and scores until the users clear out the results. The users will be able to go back to the quiz and replay by choosing "go back" button or "home"nav on the left top side of the page. The users can practice the quiz over and over to improve their speed and reinforce the knowledge of coding.
+This is a code-related quiz challenge webpage. The users are expected to finish five questions within 50 seconds. Each incorrect answer will deduct 10 seconds. The quiz will start as soon as the users click on the "START" button, and the timer will start count down. The users are requested to input their initials when the quiz is completed. The webpage will store the initials and scores until the users clear out the results. The users will be able to go back to the quiz and replay by choosing "go back" button or "home"nav on the left top side of the page. The users can practice the quiz over and over to improve their speed and reinforce the knowledge of coding.
 Enjoy and have fun!
 
 
