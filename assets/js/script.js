@@ -6,6 +6,8 @@ var timeIntervalId
 var timeLeft
 var saveBtn = document.querySelector("#saveBtn")
 var initialEl = document.querySelector(".initial")
+var highScoresEl = document.querySelector(".highScores")
+var scoreData =JSON.parse(localStorage.getItem("highScore")) || []
 var data = [
     {
         question: "Commonly used data types DO NOT include:",
@@ -36,6 +38,7 @@ var data = [
 ]
 
 var dataIndex = 0
+var losses = 0
 
 function showQuestion() {
     quizEl.innerHTML = `
@@ -62,9 +65,15 @@ function showQuestion() {
 
                 } else {
                     rightWrongEl.textContent = "Incorrect!"
-                    timeLeft = timeLeft - 15
+                    timeLeft = timeLeft - 10;
+                    losses++
                 }
                 clearInterval(timeIntervalId);
+
+                if (losses === data.length) {
+                    timeLeft = 0
+                    timerEl.textContent = "Time:" + timeLeft;
+                }
                 
                 setTimeout(function () {
                     startQuizEl.classList.add("hidden")
@@ -78,8 +87,10 @@ function showQuestion() {
                     rightWrongEl.textContent = "Correct!"
 
                 } else {
+                    console.log("timeLeft else", timeLeft)
                     rightWrongEl.textContent = "Incorrect!"
-                    timeLeft = timeLeft - 15
+                    timeLeft = timeLeft - 10
+                    losses++
                 }
                 dataIndex++
                 setTimeout(showQuestion, 500);
@@ -97,12 +108,14 @@ startBtnEl.addEventListener("click", function () {
     countdown();
 });
 
+ 
 
 function countdown() {
 
-    timeLeft = data.length * 15;
+    timeLeft = data.length * 10;
     timeIntervalId = setInterval(function () {
         if (timeLeft >= 0) {
+            console.log("timeLEft setTime", timeLeft)
             timerEl.textContent = "Time:" + timeLeft;
             timeLeft--;
 
@@ -114,12 +127,25 @@ function countdown() {
             quizEl.classList.add("hidden")
             initialEl.classList.remove("hidden")
         }
+
+       
        
     }, 1000);
 }
 
 saveBtn.addEventListener("click",function(){
-alert("save")
+    var initialInput = document.querySelector("#initial-input")
+
+    console.log(scoreData)
+    scoreData.push({
+        initial: initialInput.value,
+        score: timeLeft
+    })
+
+    localStorage.setItem("highScore",JSON.stringify(scoreData))
+
+    location.href="./highScore.html"
+
 });
 
-
+ 

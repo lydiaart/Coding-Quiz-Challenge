@@ -5,15 +5,16 @@ header{
     background-color: lightsteelblue;
     opacity: 0.7;
     height:260px;
-    padding:15px;
+ 
     background-image: url(./image/time-371226_1920.jpg);
-    z-index: -10;
+    z-index: 1;
 }
 .scores {
     display:flex;
     width: 94%;
     color:black;
 }
+
 #countdown {
     display:flex;
     width: 6%;
@@ -48,7 +49,8 @@ text-align: center;
     font-size: 20px;
     font-family:Arial, Helvetica, sans-serif;
     color: white;
-    border-radius: 15px;
+    border-radius: 10px;
+    border:0 none;
     margin:0 auto;
     width:18%;
     justify-content: center;
@@ -57,7 +59,7 @@ text-align: center;
 .options {
     margin:10px;
     background-color:slategrey;
-    border-radius: 15px;
+    border-radius: 10px;
     width: 25%;
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -84,3 +86,53 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
 }
+
+#goBack{
+    margin:10px;
+    background-color:slategrey;
+    border-radius: 10px;
+    border: 0 none;
+    width: 15%;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color:snow;
+    padding:10px;
+    text-align: center;
+} 
+#clearScores {
+    margin:10px;
+    background-color:slategrey;
+    border-radius: 10px;
+    border:0 none;
+    width: 30%;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color:snow;
+    padding:10px;
+    text-align: center;
+} 
+ol  {
+   list-style-type: none;
+} 
+ 
+a {
+    text-decoration: none;
+    color:white;
+}
+
+.link {
+    color:black;
+    text-shadow: 2px 2px 5px white;
+}
+
+#initial-input {
+    font-size: 30px;
+    border-radius: 10px;
+    border:0.5px solid  lightgrey;
+}
+.options:hover,#startBtn:hover, #saveBtn:hover, #goBack:hover, #clearScores:hover {
+    background-color:lightgrey;
+}
+ 

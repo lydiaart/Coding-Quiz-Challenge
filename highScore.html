@@ -5,31 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="secondPage" href="./assets/css/secondPage.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 
 </head>
 
 <body>
     <header>
-        <div class="homePage"><a href="./index.html">
-                Home</a></div>
+        <div class="scores"><a class="link" href="./index.html">
+                home</a></div>
 
+                
     </header>
-    <main>
-        <section>
+
+    <main class="container">
+        <section class="highScores">
             <h1 class="question">
                 High Scores
             </h1>
-            <p></p>
-            <button Id="goBack">
-                Go Back
+            <ol id="high-Scores">
+
+            </ol>
+            <button Id="goBack"><a href="./index.html">
+                    Go Back</a>
             </button>
             <button Id="clearScores">
                 Clear High Scores
             </button>
         </section>
+    </main>
+    <script src="./assets/js/score.js"></script>
+    <footer>© Lydia Loy 2021</footer>
+
 </body>
-<footer>© Lydia Loy 2021</footer>
 
 </html>
