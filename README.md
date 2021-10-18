@@ -8,17 +8,17 @@ Enjoy and have fun!
 
 ## Table of Contents
 
-* [Installation](#Installation)
+* [Built with](#Builtwith)
 * [Usage](#Usage)
 * [Websites](#Websites)
 * [Credits](#Credits)
 
 
-## Installation
+## Built with
 
-1. clone the code from github.
-2. download the files into your computer.
-3. ready to use.
+1. HTML
+2. CSS
+3. JavaScript
 
 ## Usage
 
