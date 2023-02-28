@@ -36,11 +36,11 @@ The following image demonstrates the web application's appearance and functional
 
 ## Websites
 
- https://flowingcityloy.github.io/Coding-Quiz-Challenge/ (Links to an external site.)
+ https://lydiaart.github.io/Coding-Quiz-Challenge/ (Links to an external site.)
 
-https://github.com/flowingcityloy/Coding-Quiz-Challenge
+https://github.com/lydiaart/Coding-Quiz-Challenge
 
 
 ## Credits
 
-❤️ Made with love by Lydia Loy ❤️
+2U Instructional Team, Tutor, Lydia
